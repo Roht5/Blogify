@@ -17,7 +17,7 @@ const {
 const app = express();
 // const PORT =  8000;
 const PORT = process.env.PORT || 8000;
-
+mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGO_URL)
   // .connect(process.env.MONGO_URL)
